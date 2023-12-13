@@ -13,11 +13,11 @@ public class Main {
 
         while (x <= limit) {
         	
-            double fx = Math.pow(x, 2) - Math.pow(Math.E, 2 * x) + 4;
+            double fx = Math.pow(x, 2) - Math.exp(2 * x) + 4;
             System.out.printf("%.2f  |  %.2f%n", x, fx);
 
-            if (Math.abs(fx) < 1e-6){
-                System.out.println("ноль функции");
+            if (fx < 0){
+                System.out.println("Пройден нуль функции при x = " + x + ", fx = " + fx);
                 break;
             }
             x += difference;

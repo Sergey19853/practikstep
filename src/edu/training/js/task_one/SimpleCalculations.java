@@ -23,8 +23,8 @@ public class SimpleCalculations {
 	
 	public void formulaCalculation() {
 		
-		result = Math.sqrt(Math.pow(Math.E, 2.2 * x)) - Math.abs(Math.sin((Math.PI * x ) / (x + (2 / 3)))) + 1.7;
-		
+		result = Math.sqrt(Math.exp(2.2 * x)) - Math.abs(Math.sin((Math.PI * x ) / (x + (double) 2 / 3))) + 1.7;
+
 	}
 	
 
